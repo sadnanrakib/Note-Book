@@ -12,11 +12,11 @@
     <h1 class="text-center text-warning mb-3">Find Phone</h1>
 </header>
 <main class="container">
-    <section>
-        <div class="mb-3 w-50">
-            <input id="search-field" type="email" class="form-control" id="exampleFormControlInput1"
+    <section class="text-center mt-4">
+        <div class="mb-3 w-50 mx-auto">
+            <input id="search-field" type="email" class="form-control text-center" id="exampleFormControlInput1"
                 placeholder="search your phone">
-            <div id="btn-search" class="btn btn-primary">Search</div>
+            <div id="btn-search" class="btn btn-primary mt-2">Search</div>
         </div>
     </section>
     <!-- sezrch phone -->
@@ -25,8 +25,14 @@
            
                     
           </div>
+
           <div id="no-phone-found" class="d-none">
             <h3 class="text-warning mt-4 ">No Phone Found.Please Again Search</h3>
+        </div>
+
+
+        <div id="show-all" class="text-center mt-4 d-none">
+         <div id="btn-show-all" class="btn btn-primary">Show All</div>
         </div>
     </section>
     <!-- loder -->
@@ -36,6 +42,26 @@
               <span class="visually-hidden">Loading...</span>
             </div>
           </div>
+    </section>
+
+    <section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="phoneDetailModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="phoneDetailModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div id="phone-details" class="modal-body">
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+            </div>
     </section>
 </main>
 
